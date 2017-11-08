@@ -8,19 +8,19 @@ Single page Application - Desarrollada con:
 
 ## Install
 En el directorio correr:
-  npm i
+  `npm i`
 
 para resolver los conflictos:
-  npm i -dev
+  `npm i -dev`
 
 ## Run
 Ejecutar el comando:
-  npm start
+  `npm start`
 
 El puerto por defecto es:
-  3100
+  `3100`
 
 La aplicación funcionará en:
-  http://127.0.0.1:3100
+  `http://127.0.0.1:3100`
 
 Las credenciales de login pueden estar vacías.
