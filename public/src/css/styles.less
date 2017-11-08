@@ -1,0 +1,243 @@
+/*colors*/
+@c_backColor: #f5f5fa;
+@c_textGray: #2f323a; /*Fonts*/
+@c_backGray: #1e2025;
+@f_Open: 'Open Sans', sans-serif; /* Delet aut */
+
+body,
+html {
+  position: relative;
+  width: 100%;
+  font-family: @f_Open;
+}
+
+body {
+  padding-top: 50px;
+}
+
+#mainApp,
+.sectionAll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: @c_backColor;
+}
+/*vertical align*/
+
+.c-center() {
+  position: relative;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.vertical-align() {
+  position: relative;
+  float: none;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.form-control {
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 17px;
+  border: 1px solid #f1f1f1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+}
+/*all media*/
+
+.login {
+  .c-center();
+  .vertical-align();
+  border: 1px solid @c_textGray;
+  border-radius: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #fff;
+  width: 90%;
+
+  .login_form {
+    text-align: center;
+    color: @c_textGray;
+
+    .login_content {
+      padding: 0 15px;
+    }
+
+    .btn {
+      width: 90%;
+      .c-center();
+      color: #fff;
+      background-color: @c_textGray;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid @c_textGray;
+    }
+  }
+}
+/*Tmplate nav*/
+.top_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #2f323a;
+
+  .logo-header {
+    background-color: #fff;
+    height: 100%;
+
+    img {
+      .vertical-align();
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+/*NAv left*/
+.left-nav {
+  background: @c_textGray;
+  width: 90%;
+  left: 0;
+  top: 0;
+  float: left;
+  height: 100%;
+  position: relative;
+
+  ul {
+    list-style: none;
+
+    li {
+      width: 100%;
+      display: block;
+      float: left;
+      position: relative;
+
+      a {
+        display: block;
+        position: relative;
+        padding: 20px 0;
+        font-size: 17px;
+        width: 100%;
+        text-indent: 15px;
+        cursor: pointer;
+        color: #fff;
+        box-shadow: none;
+        border-bottom: 1px solid @c_backGray;
+
+        &:hover {
+          background-color: @c_backGray;
+        }
+      }
+    }
+  }
+}
+/*Section*/
+
+.section-main {
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#analytics {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+/* position media*/
+// Small devices
+@media (min-width: 576px) {
+  .login {
+    width: 90%;
+
+    .btn {
+      width: 90%;
+    }
+  }
+
+  .left-nav {
+    width: 40%;
+  }
+
+  .section-main {
+    width: 60%;
+  }
+}
+// Medium devices
+@media (min-width: 768px) {
+  .login {
+    width: 60%;
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  .left-nav,
+  .logo-header {
+    width: 30%;
+  }
+
+  .section-main {
+    width: 70%;
+  }
+}
+// Large devices
+@media (min-width: 992px) {
+  .login {
+    width: 60%;
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  .left-nav,
+  .logo-header {
+    width: 20%;
+  }
+
+  .section-main {
+    width: 80%;
+  }
+}
+// Extra large devices
+@media (min-width: 1200px) {
+  .login {
+    width: 30%;
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  .left-nav,
+  .logo-header {
+    width: 20%;
+  }
+
+  .section-main {
+    width: 80%;
+  }
+}
